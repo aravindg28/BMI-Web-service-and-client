@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/bmiClientStyle.css">
+  </head>
+  <body>
+      <nav class="navbar navbar-dark bg-dark">
+          <div id = "centreDiv" style = "margin-left: auto; margin-right: auto"><h2 class = "headerStyle" >BMI Calculator</h2></div>
+      </nav>
+
+    <div class = "container">
+            <div class = "top" >
+                    <form>
+                        <div id = "containerDiv">
+                        <div class="form-group">
+                          <label for="userHeight">Enter your height (in <strong>metres</strong>) <strong class="important">*</strong></label>
+                          <input type="text" class="form-control" id="userHeight" placeholder="Enter height in metres" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userWeight">Enter your weight (in <strong>kilograms</strong>) <strong class="important">*</strong></label>
+                            <input type="text" class="form-control" id="userWeight" placeholder="Enter weight in kilograms" required>
+                        </div>
+                      </div>
+                        <!-- <button class="btn btn-primary top" id = "calculateBtn">Calculate</button> -->
+                        <input type="button" value="Calculate BMI" id= "calculateBtn" class = "bg-primary buttons top2">
+                        <input type="reset" value="Clear"  class = "bg-primary buttons top2">
+                      </form>
+                    </div>
+                    <div class="alert alert-info top2" role="alert">
+                        <h4 class="alert-heading">What does your BMI indicate?</h4>
+                        <p> If BMI is <em>less than 18.5</em>, it means you are <strong>underweight</strong>.</p>
+                        <p> If BMI is <em>between 18.5 to 24.9</em>, it means you are <strong>normal weight</strong>.</p>
+                        <p> If BMI is <em>between 25 to 29.9</em>, it means you are <strong>over weight</strong>.</p>
+                        <p> If BMI is <em>30 or greater</em>, it means you are <strong>obese</strong>.</p>
+                    
+                        <hr>
+                        <p class="mb-0">Take control of your BMI for a healthy life.</p>
+                      </div>
+    </div>
+  
+
+
+    <nav class="navbar navbar-dark bg-dark footer_style">
+        <div id = "centreDiv" style = "margin-left: auto; margin-right: auto"><p class = "headerStyle">Official BMI Calculator. Copyright 2019. All rights reserved.</p></div>
+    </nav>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="/js/bmiClientScript.js"></script>
+
+  </body>
+</html>
